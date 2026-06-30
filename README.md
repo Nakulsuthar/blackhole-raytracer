@@ -22,20 +22,13 @@ where $u = 1/r$ and $r_s = 2GM/c^2$ is the Schwarzschild radius.
 
 
 ## Project structure
-blackhole-raytracer/
 
-├── main.py              # entry point — wires everything together
-
-├── tracer/
-
-│   ├── integrator.py    # RK4 stepper + Binet ODE + trace_ray()
-
-│   ├── camera.py        # pixel → impact parameter mapping
-
-│   └── renderer.py      # ray result → pixel color (starfield, disk, redshift)
-
-├── outputs/             # rendered images
-
-└── tests/
-
-└── test_integrator.py  # validation checks
+    blackhole-raytracer/
+    ├── main.py                # entry point — wires everything together
+    ├── tracer/
+    │   ├── integrator.py      # RK4 stepper + Binet ODE + trace_ray()
+    │   ├── camera.py          # pixel → impact parameter mapping
+    │   └── renderer.py        # ray result → pixel color (starfield, disk, redshift)
+    ├── outputs/               # rendered images
+    └── tests/
+        └── test_integrator.py # validation checks
